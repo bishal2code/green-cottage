@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .form {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+        }
+
+        form {
+            width: 30%;
+            border: 1px solid;
+            padding: 15px 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0px;
+
+        }
+
+        input[type=email],
+        input[type=password],
+        input[type=text],
+        input[type=number] {
+            width: 90%;
+            margin: 5px 3%;
+            height: 30px;
+            border: 2px solid black;
+            padding: 0px 2%;
+            border-radius: 2px;
+        }
+
+        input[type=email]:focus,
+        input[type=password]:focus,
+        input[type=text]:focus,
+        input[type=number]:focus {
+            outline: 0;
+            border: 0px;
+            border-bottom: 3px solid black;
+            font-size: 18px;
+
+        }
+
+        .forgot {
+            width: 92%;
+            margin: 10px 4%;
+        }
+
+        /* .forgot a:hover{ */
+
+        /* } */
+
+        .button {
+            width: 100%;
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            width: 25%;
+            height: 30px;
+            border-radius: 5px;
+            border: 3px solid black;
+            background-color: white;
+        }
+
+        button:hover {
+            cursor: pointer;
+            transition: 0.3s;
+            background-color: rgb(85, 75, 75);
+        }
+
+        .Signup {
+            gap: 10px;
+            margin: 20px 5%;
+            width: 90%;
+
+
+        }
+
+        .info_detail {
+            width: 90%;
+            margin: 0px 5%;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        @media only screen and (max-width: 900px) {
+            form {
+                width: 50%;
+                border: 1px solid;
+                padding: 15px 10px;
+
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            form {
+                width: 60%;
+                border: 1px solid;
+                padding: 15px 10px;
+
+            }
+        }
+    </style>
+    <div class="form">
+        <form action="#">
+            <div class="img"><img src="Photo/logo.jpg"></div>
+            <div class="title"> Green cottage</div>
+            <div class="info_detail">Create New Password </div>
+            <input name="new_password" type="text" placeholder="Create a password" required>
+            <input name="conform_password" type="text" placeholder="Re enter your password" required>
+
+            <div class="button"><button type="submit">Conform</button></div>
+            <div class="Signup">Already have Account <a href="/login.html" target="_self">Login</a></div>
+        </form>
+    </div>
+
+</body>
+
+</html>
